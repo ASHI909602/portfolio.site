@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ashish Kumar Singh | AI & ML Student</title>
+<meta name="description" content="Portfolio of Ashish Kumar Singh, B.Tech student specializing in AI & Machine Learning.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="bg" aria-hidden="true"></canvas>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav">
+  <a href="#home" class="logo" aria-label="Home">AS</a>
+  <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+  <nav id="menu" aria-label="Main">
+    <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a>
+    <a href="#education">Education</a><a href="#achievements">Achievements</a><a href="#contact">Contact</a>
+  </nav>
+</header>
+<main id="main">
+<section id="home" class="hero">
+    <img class="photo" src="photo.jpg" alt="Ashish Kumar Singh">
+  <h1>Ashish Kumar Singh</h1>
+  <p class="tagline">Building Intelligent Solutions with AI &amp; Machine Learning.</p>
+  <p class="intro">I’m a Computer Science student specializing in AI &amp; ML, passionate about machine learning, deep learning, data science, and developing practical software solutions.</p>
+  <div class="btns">
+    <a class="btn primary" href="#projects">Explore Projects</a>
+    <a class="btn ghost" href="#contact">Contact Me</a>
+    <a class="btn ghost" id="resumeBtn" href="#" role="button">Download Resume</a>
+  </div>
+  <p class="note" id="resumeMsg" role="status" hidden></p>
+</section>
+
+<section id="about" class="sec">
+  <h2>About Me</h2>
+  <div class="glass wide">
+    <p>I’m a B.Tech student in Computer Science and Engineering, specializing in Artificial Intelligence and Machine Learning. I enjoy turning ideas into working software: writing programs, preparing and exploring data, and training models that solve practical problems.</p>
+    <p>My interests span machine learning, deep learning, data science, and software engineering. I learn best by building projects, from image classification and language modelling to network security.</p>
+  </div>
+</section>
+
+<section id="skills" class="sec">
+  <h2>Skills</h2>
+  <!-- EDIT: add or remove <li> items inside any category -->
+  <div class="grid">
+    <article class="glass"><h3>Programming</h3><ul class="tags"><li>Python</li><li>C++</li><li>Java</li></ul></article>
+    <article class="glass"><h3>Machine Learning</h3><ul class="tags"><li>Scikit-learn</li><li>Data preprocessing</li><li>Model evaluation</li></ul></article>
+    <article class="glass"><h3>Deep Learning</h3><ul class="tags"><li>TensorFlow/Keras</li><li>PyTorch</li><li>CNN</li><li>RNN</li><li>LSTM</li></ul></article>
+    <article class="glass"><h3>Data Science</h3><ul class="tags"><li>NumPy</li><li>Pandas</li><li>Matplotlib</li></ul></article>
+    <article class="glass"><h3>Tools</h3><ul class="tags"><li>Jupyter Notebook</li><li>Google Colab</li><li>Git</li><li>GitHub</li></ul></article>
+  </div>
+</section>
+
+<section id="projects" class="sec">
+  <h2>Projects</h2>
+  <p class="sub">Select a card to see more details.</p>
+  <div class="grid">
+    <article class="glass card" data-project="cnn">
+      <button class="card-head" aria-expanded="false">
+        <span class="status" data-status-for="cnn">In Progress</span>
+        <h3>Cat vs Dog Image Classification</h3>
+        <span class="hint">CNN-based image classification</span>
+      </button>
+      <div class="card-body"><ul>
+        <li>Convolutional neural network for classifying cat and dog images.</li>
+        <li>Image preprocessing, model training, and prediction.</li></ul>
+        <div class="links" data-links-for="cnn"></div></div>
+    </article>
+    <article class="glass card" data-project="lstm">
+      <button class="card-head" aria-expanded="false">
+        <span class="status" data-status-for="lstm">In Progress</span>
+        <h3>Next Word Prediction Using LSTM</h3>
+        <span class="hint">NLP with sequence models</span>
+      </button>
+      <div class="card-body"><ul>
+        <li>An NLP project that uses an LSTM to predict the next word in a text sequence.</li></ul>
+        <div class="links" data-links-for="lstm"></div></div>
+    </article>
+    <article class="glass card" data-project="ids">
+      <button class="card-head" aria-expanded="false">
+        <span class="status" data-status-for="ids">In Progress</span>
+        <h3>ML-Based Network Intrusion Detection</h3>
+        <span class="hint">Network traffic classification</span>
+      </button>
+      <div class="card-body"><ul>
+        <li>Classifies network traffic using the KDD dataset.</li>
+        <li>Goal: distinguish normal traffic from potentially malicious traffic.</li></ul>
+        <div class="links" data-links-for="ids"></div></div>
+    </article>
+  </div>
+</section>
+
+<section id="education" class="sec">
+  <h2>Education</h2>
+  <div class="glass wide">
+    <h3>B.Tech in Computer Science and Engineering (AI &amp; ML)</h3>
+    <p>Government Engineering College, Jamui, Bihar, India</p>
+    <p class="muted">Expected graduation: 2027</p>
+  </div>
+</section>
+
+<section id="achievements" class="sec">
+  <h2>Achievements</h2>
+  <div class="grid two">
+    <article class="glass"><h3>First Position</h3><p>College-level internal Smart India Hackathon.</p></article>
+    <article class="glass"><h3>Core Member</h3><p>Code Club, Government Engineering College, Jamui.</p></article>
+  </div>
+</section>
+
+<section id="contact" class="sec">
+  <h2>Contact</h2>
+  <div class="grid two">
+    <div class="glass">
+      <h3>Get in touch</h3>
+      <p><a href="mailto:ashishsinghdbg1234@gmail.com">ashishsinghdbg1234@gmail.com</a></p>
+      <p><a href="https://www.linkedin.com/in/ashish-kumar-singh-893ba13b2/" target="_blank" rel="noopener noreferrer">LinkedIn profile</a></p>
+      <p id="ghWrap" hidden><a id="ghLink" href="#" target="_blank" rel="noopener noreferrer">GitHub profile</a></p>
+    </div>
+    <form class="glass" id="form" novalidate>
+      <h3>Send an email</h3>
+      <label for="name">Name</label>
+      <input id="name" name="name" type="text" autocomplete="name" required>
+      <span class="err" id="e-name" role="alert"></span>
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" autocomplete="email" required>
+      <span class="err" id="e-email" role="alert"></span>
+      <label for="msg">Message</label>
+      <textarea id="msg" name="msg" rows="4" required></textarea>
+      <span class="err" id="e-msg" role="alert"></span>
+      <button class="btn primary" type="submit">Open in my email app</button>
+      <p class="note">This site has no server. The button opens your email app with the message filled in, and you press Send there.</p>
+      <p class="ok" id="formOk" role="status" hidden></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>© <span id="yr"></span> Ashish Kumar Singh</footer>
+<script src="script.js"></script>
+</body>
+</html>
